@@ -1,0 +1,10 @@
+*.class
+
+# ignore build folder
+build/
+
+# ignore .gradle files
+.gradle/
+
+.swo/
+/bin/

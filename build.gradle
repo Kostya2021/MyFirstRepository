@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    // package and class to be main method
+    mainClassName = 'bank.app.Main'
+}
+
+
+jar {
+    manifest {
+	// set location of main class        
+	attributes "Main-Class": "bank.app.Main"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+
+
+
+
+
